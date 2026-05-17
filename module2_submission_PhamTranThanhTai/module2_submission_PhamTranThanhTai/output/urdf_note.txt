@@ -1,0 +1,78 @@
+Reading URDF: /home/ubuntu/Downloads/WalkerS2-Model/walker_s2_description/urdf/s2/s2.urdf
+
+Robot name: walker_s2_description
+
+=== LINKS (33) ===
+  base_link                                     visual=True col=True inertial=True
+  waist_yaw_link                                visual=True col=True inertial=True
+  waist_pitch_link                              visual=True col=True inertial=True
+  head_yaw_link                                 visual=True col=True inertial=True
+  head_pitch_link                               visual=True col=True inertial=True
+  L_shoulder_pitch_link                         visual=True col=True inertial=True
+  L_shoulder_roll_link                          visual=True col=True inertial=True
+  L_shoulder_yaw_link                           visual=True col=True inertial=True
+  L_elbow_roll_link                             visual=True col=True inertial=True
+  L_elbow_yaw_link                              visual=True col=True inertial=True
+  L_wrist_pitch_link                            visual=True col=True inertial=True
+  L_wrist_roll_link                             visual=True col=True inertial=True
+  L_sixforce_link                               visual=True col=True inertial=True
+  R_shoulder_pitch_link                         visual=True col=True inertial=True
+  R_shoulder_roll_link                          visual=True col=True inertial=True
+  R_shoulder_yaw_link                           visual=True col=True inertial=True
+  R_elbow_roll_link                             visual=True col=True inertial=True
+  R_elbow_yaw_link                              visual=True col=True inertial=True
+  R_wrist_pitch_link                            visual=True col=True inertial=True
+  R_wrist_roll_link                             visual=True col=True inertial=True
+  R_sixforce_link                               visual=True col=True inertial=True
+  L_hip_roll_link                               visual=True col=True inertial=True
+  L_hip_yaw_link                                visual=True col=True inertial=True
+  L_hip_pitch_link                              visual=True col=True inertial=True
+  L_knee_pitch_link                             visual=True col=True inertial=True
+  L_ankle_pitch_link                            visual=True col=True inertial=True
+  L_ankle_roll_link                             visual=True col=True inertial=True
+  R_hip_roll_link                               visual=True col=True inertial=True
+  R_hip_yaw_link                                visual=True col=True inertial=True
+  R_hip_pitch_link                              visual=True col=True inertial=True
+  R_knee_pitch_link                             visual=True col=True inertial=True
+  R_ankle_pitch_link                            visual=True col=True inertial=True
+  R_ankle_roll_link                             visual=True col=True inertial=True
+
+=== JOINTS (32) ===
+  NAME                                          TYPE         PARENT                         CHILD  [limit]
+  --------------------------------------------------------------------------------------------------------------
+  waist_yaw_joint                               revolute     base_link                      waist_yaw_link  [-2.8274, 2.8274]
+  waist_pitch_joint                             revolute     waist_yaw_link                 waist_pitch_link  [-1.5707, 0.6108]
+  head_yaw_joint                                revolute     waist_pitch_link               head_yaw_link  [-1.658, 1.658]
+  head_pitch_joint                              revolute     head_yaw_link                  head_pitch_link  [-0.7854, 0.5236]
+  L_shoulder_pitch_joint                        revolute     waist_pitch_link               L_shoulder_pitch_link  [-2.8623, 2.8623]
+  L_shoulder_roll_joint                         revolute     L_shoulder_pitch_link          L_shoulder_roll_link  [-1.885, 0.1222]
+  L_shoulder_yaw_joint                          revolute     L_shoulder_roll_link           L_shoulder_yaw_link  [-2.9322, 2.9322]
+  L_elbow_roll_joint                            revolute     L_shoulder_yaw_link            L_elbow_roll_link  [-2.6529, 0.0349]
+  L_elbow_yaw_joint                             revolute     L_elbow_roll_link              L_elbow_yaw_link  [-2.9322, 2.9322]
+  L_wrist_pitch_joint                           revolute     L_elbow_yaw_link               L_wrist_pitch_link  [-1.658, 1.658]
+  L_wrist_roll_joint                            revolute     L_wrist_pitch_link             L_wrist_roll_link  [-2.0245, 2.0245]
+  L_sixforce_joint                              fixed        L_wrist_roll_link              L_sixforce_link  
+  R_shoulder_pitch_joint                        revolute     waist_pitch_link               R_shoulder_pitch_link  [-2.8623, 2.8623]
+  R_shoulder_roll_joint                         revolute     R_shoulder_pitch_link          R_shoulder_roll_link  [-1.885, 0.1222]
+  R_shoulder_yaw_joint                          revolute     R_shoulder_roll_link           R_shoulder_yaw_link  [-2.9322, 2.9322]
+  R_elbow_roll_joint                            revolute     R_shoulder_yaw_link            R_elbow_roll_link  [-2.6529, 0.0349]
+  R_elbow_yaw_joint                             revolute     R_elbow_roll_link              R_elbow_yaw_link  [-2.9322, 2.9322]
+  R_wrist_pitch_joint                           revolute     R_elbow_yaw_link               R_wrist_pitch_link  [-1.658, 1.658]
+  R_wrist_roll_joint                            revolute     R_wrist_pitch_link             R_wrist_roll_link  [-2.0245, 2.0245]
+  R_sixforce_joint                              fixed        R_wrist_roll_link              R_sixforce_link  
+  L_hip_roll_joint                              revolute     base_link                      L_hip_roll_link  [-0.4363, 0.7853]
+  L_hip_yaw_joint                               revolute     L_hip_roll_link                L_hip_yaw_link  [-0.7853, 1.0471]
+  L_hip_pitch_joint                             revolute     L_hip_yaw_link                 L_hip_pitch_link  [-0.349, 1.9198]
+  L_knee_pitch_joint                            revolute     L_hip_pitch_link               L_knee_pitch_link  [-2.2689, 0.0872]
+  L_ankle_pitch_joint                           revolute     L_knee_pitch_link              L_ankle_pitch_link  [-0.5235, 1.0471]
+  L_ankle_roll_joint                            revolute     L_ankle_pitch_link             L_ankle_roll_link  [-0.5235, 0.5235]
+  R_hip_roll_joint                              revolute     base_link                      R_hip_roll_link  [-0.7853, 0.4363]
+  R_hip_yaw_joint                               revolute     R_hip_roll_link                R_hip_yaw_link  [-1.0471, 0.7853]
+  R_hip_pitch_joint                             revolute     R_hip_yaw_link                 R_hip_pitch_link  [-0.349, 1.9198]
+  R_knee_pitch_joint                            revolute     R_hip_pitch_link               R_knee_pitch_link  [-2.2689, 0.0872]
+  R_ankle_pitch_joint                           revolute     R_knee_pitch_link              R_ankle_pitch_link  [-0.5235, 1.0471]
+  R_ankle_roll_joint                            revolute     R_ankle_pitch_link             R_ankle_roll_link  [-0.5235, 0.5235]
+
+=== SUMMARY: 33 links, 32 joints ===
+  fixed: 2
+  revolute: 30
